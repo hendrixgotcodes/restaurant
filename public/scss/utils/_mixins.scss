@@ -1,0 +1,27 @@
+@mixin primary-border {
+    border: 1px solid $secondary_color--light;
+}
+
+@mixin button-border{
+    border: 1px solid $secondary_color;
+}
+
+@mixin primary_header($header){
+    font-family: 'SharpGrotesk TRIAL Medium';
+    /* color: red; */
+    font-size: 35px;
+    position: relative;
+    z-index: 2;
+    color: $secondary_color;
+
+    &::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 1px;
+        width: $header;
+        height: 10%;
+        background-color: $accent_color;
+        z-index: 1;
+    }
+}

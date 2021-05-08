@@ -1,0 +1,19 @@
+.primary_button{
+
+    @include button-border;
+    font-size: 16;
+    color: $secondary_color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $secondary_color;
+        color: $white;
+        transition: color .3s;
+    }
+
+}
