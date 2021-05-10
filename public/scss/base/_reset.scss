@@ -1,3 +1,11 @@
+@font-face {
+    font-family: SharpGrotesk;
+    src:  url(../fonts/SharpGroteskMedium-22.ttf) format('truetype'),
+          url(../fonts/SharpGroteskMedium-22.woff) format('woff');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
 *{
     margin: 0;
     padding: 0;

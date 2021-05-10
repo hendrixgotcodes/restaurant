@@ -7,7 +7,8 @@
     display: flex;
     @include primary-border;
     height: 9%;
-    background-color: $primary_color;
+    // background-color: $primary_color;
+    background-color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +42,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: $header_font;
+            cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: $secondary_color;
+            }
+
         }
 
         .current{
@@ -49,7 +58,7 @@
             border-top: none;
             border-bottom: none;
 
-            span{
+            a{
 
                 &::after{
                     position: absolute;

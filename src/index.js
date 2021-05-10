@@ -18,7 +18,7 @@ const Fullpage = ()=>(
     render={({state, fullpageApi})=>(
 
       <ReactFullPage.Wrapper>
-        <App/>
+        <App fullpageProps={{state, fullpageApi}} />
       </ReactFullPage.Wrapper>
 
     )}

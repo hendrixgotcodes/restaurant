@@ -9,6 +9,7 @@
     padding: .5rem;
     font-weight: bold;
     cursor: pointer;
+    font-family: $primary_font;
 
     &:hover{
         background-color: $secondary_color;

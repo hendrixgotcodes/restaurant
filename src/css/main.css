@@ -1,3 +1,9 @@
+@font-face {
+  font-family: SharpGrotesk;
+  src: url(../fonts/SharpGroteskMedium-22.ttf) format("truetype"), url(../fonts/SharpGroteskMedium-22.woff) format("woff");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */ }
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +34,8 @@ body {
   align-items: center;
   padding: .5rem;
   font-weight: bold;
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: Montserrat, sans-serif; }
   .primary_button:hover {
     background-color: #0080FF;
     color: #fff;
@@ -42,7 +49,7 @@ body {
   display: flex;
   border: 1px solid #BDD7F2;
   height: 9%;
-  background-color: #EFEFEF;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,12 +76,17 @@ body {
       padding: 0 2rem;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      font-family: SharpGrotesk, "Open-Sans", sans-serif;
+      cursor: pointer; }
+      .nav .center .nav_link a {
+        text-decoration: none;
+        color: #0080FF; }
     .nav .center .current {
       border: 1px solid #BDD7F2;
       border-top: none;
       border-bottom: none; }
-      .nav .center .current span::after {
+      .nav .center .current a::after {
         position: absolute;
         content: "";
         bottom: -5px;
@@ -95,20 +107,23 @@ body {
   padding-top: 5rem;
   padding-bottom: 2rem;
   display: flex; }
-  .section .center .primary_header {
-    font-family: 'SharpGrotesk TRIAL Medium';
-    /* color: red; */
-    font-size: 35px;
-    position: relative;
-    z-index: 2;
-    color: #0080FF; }
-    .section .center .primary_header::before {
+  .section .center .header_wrapper {
+    width: fit-content; }
+    .section .center .header_wrapper .primary_header {
+      /* color: red; */
+      font-family: SharpGrotesk, "Open-Sans", sans-serif;
+      font-size: 35px;
+      position: relative;
+      z-index: 2;
+      color: #0080FF;
+      z-index: 2; }
+    .section .center .header_wrapper .pHeader_highlighter {
       position: absolute;
       content: "";
       left: 0;
-      bottom: 1px;
-      width: 85%;
-      height: 10%;
+      bottom: 6.5px;
+      width: 100%;
+      height: 8px;
       background-color: #E9C8A1;
       z-index: 1; }
   .section .center .flex_child {
@@ -122,9 +137,55 @@ body {
       font-size: 23px;
       font-weight: lighter;
       margin: 1.5rem 0;
-      color: #707070; }
+      color: #707070;
+      font-family: Montserrat, sans-serif;
+      font-weight: 300; }
     .section .center .flex_child .illus {
       width: 40%;
       align-self: center; }
     .section .center .flex_child .illus-lg {
       width: 60%; }
+
+.rg_section {
+  justify-content: center; }
+  .rg_section .flex_child header {
+    line-height: 0; }
+    .rg_section .flex_child header .header_wrapper {
+      line-height: 1.2; }
+      .rg_section .flex_child header .header_wrapper .primary_header {
+        text-transform: uppercase; }
+  .rg_section .flex_child form {
+    height: 68%;
+    margin-top: 3%;
+    width: 100%; }
+    .rg_section .flex_child form .fm_lbl {
+      width: 100%;
+      display: block;
+      margin-bottom: 1.5rem; }
+      .rg_section .flex_child form .fm_lbl .fm_tb {
+        width: 100%;
+        padding: 1rem;
+        background-color: inherit;
+        border: 1px solid #0080FF; }
+
+.si_section {
+  justify-content: center; }
+  .si_section .flex_child header {
+    line-height: 0; }
+    .si_section .flex_child header .header_wrapper {
+      line-height: 1.2; }
+      .si_section .flex_child header .header_wrapper .primary_header {
+        text-transform: uppercase; }
+  .si_section .flex_child form {
+    height: 50%;
+    margin-top: 3%;
+    width: 100%; }
+    .si_section .flex_child form .fm_lbl {
+      width: 100%;
+      display: block;
+      margin-bottom: 1.5rem; }
+      .si_section .flex_child form .fm_lbl .fm_tb {
+        width: 100%;
+        padding: 1rem;
+        background-color: inherit;
+        border: 1px solid #0080FF; }

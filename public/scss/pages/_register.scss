@@ -1,0 +1,44 @@
+.rg_section{
+
+    justify-content: center;
+
+    .flex_child{
+
+        header{
+            line-height: 0;
+
+            .header_wrapper{
+                line-height: 1.2;
+
+                .primary_header{
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        form{
+
+            height: 68%;
+            margin-top: 3%;
+            width: 100%;
+
+            .fm_lbl{
+                width: 100%;
+                display: block;
+                margin-bottom: 1.5rem;
+
+                .fm_tb{
+                    width: 100%;
+                    padding: 1rem;
+                    background-color: inherit;
+                    @include input-border;
+                }
+            }
+
+        }
+
+    }
+
+    
+
+}
