@@ -1,4 +1,5 @@
 {
+  "homepage": "https://hendrixgotcodes.github.io/restaurant/",
   "name": "resto-cloud",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "node-sass -w public/scss -o src/css --recursive"
+    "sass": "node-sass -w public/scss -o src/css --recursive",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
